@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDeliveryAddressActivity"
+    android:background="@drawable/background_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_gravity="center">
+
+            <!-- Contact Info -->
+            <EditText
+                android:id="@+id/contactName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Full Name"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext"/>
+
+            <EditText
+                android:id="@+id/contactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:hint="Phone Number"
+                android:layout_marginBottom="60dp"
+                android:inputType="phone"
+                android:background="@drawable/rounded_edittext"/>
+
+            <!-- Address Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="Address:"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textStyle="bold" />
+
+            <!-- From / To Text Fields -->
+            <TextView
+                android:id="@+id/textFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="From: [loading...]"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_dark"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/textTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To: [loading...]"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_dark"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Manual Address Field -->
+            <EditText
+                android:id="@+id/addressDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter full address (street, house #, etc.)"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:gravity="center"
+                android:background="@drawable/rounded_edittext"/>
+
+            <!-- Label Radio Buttons -->
+            <RadioGroup
+                android:id="@+id/addressLabelGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/label"
+                    android:layout_height="wrap_content"
+                    android:text="Label As: "
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_marginRight="100dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:text="Home" />
+
+                <RadioButton
+                    android:id="@+id/radioWork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:text="Work" />
+            </RadioGroup>
+
+            <!-- Set as Default Toggle -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Set as default address"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <Switch
+                android:id="@+id/switchDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Save Button -->
+            <!-- Payment Method Section -->
+
+
+            <Button
+                android:id="@+id/saveAddressButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:text="Confirm"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

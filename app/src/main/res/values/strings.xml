@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">I-Carga Express</string>
+    <string-array name="locations_array">
+        <item>Select Location</item>
+        <item>Alaminos City</item>
+        <item>Anda</item>
+        <item>Asingan</item>
+        <item>Balungao</item>
+        <item>Bani</item>
+        <item>Basista</item>
+        <item>Bautista</item>
+        <item>Bayambang</item>
+        <item>Binalonan</item>
+        <item>Binmaley</item>
+        <item>Bolinao</item>
+        <item>Bugallon</item>
+        <item>Burgos</item>
+        <item>Calasiao</item>
+        <item>Dagupan City</item>
+        <item>Dasol</item>
+        <item>Infanta</item>
+        <item>Labrador</item>
+        <item>Laoac</item>
+        <item>Lingayen</item>
+        <item>Mabini</item>
+        <item>Malasiqui</item>
+        <item>Manaoag</item>
+        <item>Mangaldan</item>
+        <item>Mangatarem</item>
+        <item>Mapandan</item>
+        <item>Natividad</item>
+        <item>Pozorrubio</item>
+        <item>Rosales</item>
+        <item>San Carlos City</item>
+        <item>San Fabian</item>
+        <item>San Jacinto</item>
+        <item>San Manuel</item>
+        <item>San Nicolas</item>
+        <item>San Quintin</item>
+        <item>Santa Barbara</item>
+        <item>Santa Maria</item>
+        <item>Santo Tomas</item>
+        <item>Sison</item>
+        <item>Sual</item>
+        <item>Tayug</item>
+        <item>Umingan</item>
+        <item>Urbiztondo</item>
+        <item>Urdaneta City</item>
+        <item>Villasis</item>
+        <item>Agno</item>
+        <item>San Isidro</item>
+
+    </string-array>
+    <string-array name="priceString"
+
+        />
+
+</resources>
